@@ -1,0 +1,56 @@
+<DOCTYPE HTML!>
+<html>
+<head>
+<title>login</title>
+<style>
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+background:black;}
+
+.signpage h2{color:blue;text-align:center;}
+.signpage input{
+   width:100%;
+   padding:10px;
+   margin:0 0;
+   border:1px solid #ccc;
+   border-radius:6px;
+   }
+   .signpage button{
+     padding:5px;
+	 margin:25px 120px;
+	 color:red;
+	 cursor:pointer;
+	 border-radius:6px;
+	 }
+.signpage{
+background-color:white;
+padding:10px;
+border-radius:12px;
+width:300px;
+box-shadow:0 4px 10px;
+
+}
+</style>
+</head>
+
+<body>
+<h1 style=text-align:center;>Welcome to Spotify</h1>
+<div class="signpage">
+	<h2 >Sign Up</h2>
+	<form id="loginform">
+		<h5 >Enter Name</h5>
+		<input type="Text" id="Name" placeholder="Enter name..." required ><br>
+		<h5 >Enter Email</h5>
+		<input type="Email" id="email" placeholder="email..." required><br>
+		<h5>Enter Password</h5>
+		<input type="password" id="password" placeholder="password..." required><br>
+		<h5>Confirm Password</h5>
+		<input type="password" id="confirmpassword" placeholder="confirmpassword..." required><br>
+		<button id="sign up" onclick="window.location.href='spo.html'">Sign up</button>
+	</form>	
+		
+</body>
+
+</html>
