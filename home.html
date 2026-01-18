@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+   #bu{
+   color:black;
+   width:120px;
+   height:50px;
+   border-radius:50px;
+   margin-top:28px;
+   margin-left:100px;
+   background-color:rgb(28,180,83);
+   }
+
+  
+   #play{
+   color:black;
+   width:150px;
+   height:40px;
+   border-radius:50px;
+   margin-top:2px;
+   background-color:#FDDC5C;
+   }
+   #browse{
+   color:black;
+   width:150px;
+   height:40px;
+   border-radius:50px;
+   margin-top:2px;
+   background-color:#FDDC5C;
+   }
+   .search{
+   display:flex;
+   width:500px;
+   padding:10px 16px;
+   border:1px solid black;
+   height:40px;
+   border-radius:25px;
+   margin-top:30px;
+   margin-left:18px;
+   background-color:rgb(72,72,72);
+   }
+   #pl{
+   background-color:rgb(72,72,72);
+   width:350px;
+   margin-left:16px;
+   padding:10px 10px;
+   border-radius:10px;
+   }
+   #fi{
+   background-color:rgb(72,72,72);
+   width:350px;
+   margin-top:10px;
+   margin-left:16px;
+   padding:10px 10px;
+   border-radius:10px;
+   }
+   #out{
+   width:400px;
+   height:700px;
+   background-color:rgb(44,45,45);
+   padding:10px 10px;
+   border-radius:10px;
+   }
+   #sideout{
+   
+   height:700px;
+   background-color:rgb(44,45,45);
+   padding:10px 10px;
+   border-radius:10px;
+   
+   }
+   #son{
+   display:flex;
+   }
+   .spo{
+   margin-right:10px;
+   padding:10px 10px;
+   width:250px;
+   height:250px;
+   border-radius:10px;
+   
+   }
+  
+
+
+</style>
+</head>
+<body Style="background-color:black;">
+<div Style="background-color:black;">
+
+<nav Style=display:flex;color:white;>
+<img style=width:100px;height:90px;margin-top:0px; src="downlo.png" alt="spotify icon">
+<h1 Style=margin-top:30px;>Spotify</h1>
+
+	<input type="search" class="search" placeholder="what do you want to play?"/>
+
+<h3 Style=padding:15px;margin-top:28px;margin-left:150px; onclick="window.location.href='premium.html'">Premium</h3>
+<h3 Style=padding:15px;margin-top:28px; onclick="window.location.href='help.html'">help</h3>
+<h3 Style=padding:15px;margin-top:28px; onclick="showalert()">Download</h3>
+<button id="bu" onclick="window.location.href='login.html'"><h3>login</h3></button>
+</nav>
+
+</div >
+<div Style="display:flex;color:white;gap:10px;">
+	<div id="out">
+		<h1>Your Library</h1>
+		<div id="pl" >
+			<h2>Create Your first playlist</h2>
+			<p>it's easy,we'll help you</p>
+			<button id="play" onclick="window.location.href='login.html'">Create playlist</button>
+		</div>
+		<div id="fi" >
+			<h2>Let's find some podcasts to follow</h2>
+			<p>We'll keep you updated on new episodes</p>
+			<button id="browse" onclick="window.location.href='login.html'">browse podcasts</button>
+		</div>
+	</div> 
+	<div id="sideout">
+		<h1>Trending songs</h1>
+		<div class="son" style="margin-bottom:40px;display:grid;grid-template-columns:repeat(3,1fr);">
+			<div class="spo"><img onclick="window.location.href='login.html'" style=width:250px;height:250px;position:relative;border-radius:10px; src="spo1.jpg" alt="music pic"><h3>Yelammaa yela</h3></div>
+			<div class="spo"><img onclick="window.location.href='login.html'" style=width:250px;height:250px;position:relative;border-radius:10px; src="spo2.jpg" alt="music pic"><h3>Aathangara Orathil</h3></div>
+			<div class="spo"><img onclick="window.location.href='login.html'" style=width:250px;height:250px;position:relative;border-radius:10px; src="spo3.jpg" alt="music pic"><h3>Aathi</h3></div>
+		</div>
+		<div class="son" style="display:grid;grid-template-columns:repeat(3,1fr);">
+			<div class="spo"><img onclick="window.location.href='login.html'" style=width:250px;height:250px;position:relative;border-radius:10px; src="spo4.jpg" alt="music pic"><h3>Vaa Vaathi</h3></div>
+			<div class="spo"><img onclick="window.location.href='login.html'" style=width:250px;height:250px;position:relative;border-radius:10px; src="spo5.jpg" alt="music pic"><h3>Nira</h3></div>
+			<div class="spo"><img onclick="window.location.href='login.html'" style=width:250px;height:250px;position:relative;border-radius:10px; src="spo6.jpg" alt="music pic"><h3>Jigidi killaadi</h3></div>
+		</div>
+	</div>
+</div>
+<script>
+  function showalert(){
+   alert("Download completed");
+  }
+</script>
+
+
+
+</body>
+</html>
