@@ -3,54 +3,85 @@
 <head>
 <title>login</title>
 <style>
-body{
-display:flex;
-justify-content:center;
-align-items:center;
-background:black;}
+	body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:black;}
 
-.signpage h2{color:blue;text-align:center;}
-.signpage input{
-   width:100%;
-   padding:10px;
-   margin:0 0;
-   border:1px solid #ccc;
-   border-radius:6px;
-   }
-   .signpage button{
-     padding:5px;
-	 margin:25px 120px;
-	 color:red;
-	 cursor:pointer;
-	 border-radius:6px;
-	 }
-.signpage{
-background-color:white;
-padding:10px;
-border-radius:12px;
-width:300px;
-box-shadow:0 4px 10px;
-
-}
+  .signpage h2{text-align:center;}
+  .signpage input{
+    width:84%;
+    padding:10px;
+    margin:0px 23px;
+	background-color:black;
+    border:1px solid #ccc;
+    border-radius:6px;
+    }
+	.signpage{
+	background-color:black;
+	color:white;
+	padding:10px;
+	border-radius:12px;
+	width:300px;
+	
+	}
+	#Continue{
+	background-color:rgb(28,180,83);
+	padding:10px;
+	margin:15px 27px;
+	color:black;
+	cursor:pointer;
+	border-radius:20px;
+	width:250px;
+	}
+	#Google{
+	background-color:black;
+	border:1px solid white;
+	padding:10px;
+	margin:15px 27px;
+	color:white;
+	cursor:pointer;
+	border-radius:20px;
+	width:250px;
+	}
+	#facebook{
+	background-color:black;
+	border:1px solid white;
+	padding:10px;
+	margin:3px 27px;
+	color:white;
+	cursor:pointer;
+	border-radius:20px;
+	width:250px;
+	}
 </style>
 </head>
 
 <body>
-<h1 style=text-align:center;>Welcome to Spotify</h1>
+<img style="align-items:center;width:100px;height:90px;margin-left:100px;margin-top:-80px:margin-bottom:10px;gap:10px;"
+ src="downlo.png" alt="spotify icon">
+ 
 <div class="signpage">
-	<h2 >Sign Up</h2>
+	<h2 >Welcome</h2>
 	<form id="loginform">
-		<h5 >Enter Name</h5>
-		<input type="Text" id="Name" placeholder="Enter name..." required ><br>
-		<h5 >Enter Email</h5>
-		<input type="Email" id="email" placeholder="email..." required><br>
-		<h5>Enter Password</h5>
-		<input type="password" id="password" placeholder="password..." required><br>
-		<h5>Confirm Password</h5>
-		<input type="password" id="confirmpassword" placeholder="confirmpassword..." required><br>
-		<button id="sign up" onclick="window.location.href='spo.html'">Sign up</button>
-	</form>	
-		
+		<h5 Style=margin-top:30px;margin-left:23px; >Email or username</h5>
+		<input type="Email" id="email" placeholder="" required ><br>
+		<button id="Continue" onclick="window.location.href='spo.html'"><b>Continue</button>
+		<h3 Style=text-align:center;margin-top:2px;>or</h3>
+		<button id="Google" onclick="window.location.href='spo.html'" Style=display:flex;gap:27px;>
+			<img itemprop="contentUrl" src="https://www.svgrepo.com/show/475656/google-color.svg" 
+			alt="Google Color SVG File" title="Google Color SVG File"
+			width="20" height="20"><b Style=margin-top:4px;>Continue with Google
+		</button>
+		<button id="facebook" onclick="window.location.href='spo.html'"Style=display:flex;gap:27px;>
+			<img src="https://www.svgrepo.com/show/448224/facebook.svg" alt="Facebook SVG Vector Icon" 
+			width="23" height="23">
+			<b Style=margin-top:5px;>Continue with facebook
+		</button>
+		<h5 style=text-align:center;>Don't have an account?</h5>
+		<h5 style=text-align:center;><b onclick="window.location.href='signin.html'">Sign up</h5>
+	</form>			
 </body>
 
 </html>
