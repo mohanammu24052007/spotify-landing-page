@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+    body{
+	
+	justify-content:center;
+	align-items:center;
+	background:black;}
+   #bu{
+   color:black;
+   width:120px;
+   height:50px;
+   border-radius:50px;
+   margin-top:28px;
+   
+   background-color:rgb(28,180,83);
+   }
+   #com{
+   color:black;
+   width:220px;
+   height:50px;
+   border-radius:50px;
+   margin-top:28px;
+   background-color:rgb(28,180,83);
+   }
+
+   #don{
+   color:black;
+   width:120px;
+   height:50px;
+   border-radius:50px;
+   margin-top:28px;
+   background-color:rgb(28,180,83);
+   }
+   #co{
+   color:white;
+   align-items:center;
+   justify-content:center;
+   margin:auto;
+   padding:50px;
+   background-color:rgb(44,45,45);
+   text-align:center;
+   gap:10px;
+   }   
+   #help{
+   color:white;
+   align-items:center;
+   justify-content:center;
+   margin:auto;
+   padding:50px;
+   background-color:rgb(44,45,45);
+   text-align:center;
+   gap:10px;
+   }   
+
+
+
+</style>
+</head>
+<body Style="background-color:black;">
+<div Style="background-color:black;">
+
+<nav Style=display:flex;color:white;>
+<img style=width:100px;height:90px;margin-top:0px; src="downlo.png" alt="spotify icon">
+<h1 Style=margin-top:30px;>Spotify</h1>
+<h3 Style=padding:15px;margin-top:28px;margin-left:10px; onclick="window.location.href='premium.html'">ExplorePremium</h3>
+<button id="don" onclick="showalert()"><h3>Download</h3></button>
+<h3 Style=padding:15px;margin-top:28px;margin-left:550px; onclick="window.location.href='signin.html'">signup</h3>
+<button id="bu" onclick="window.location.href='login.html'"><h3>login</h3></button>
+</nav>
+
+</div >
+ 
+<section id="help" Style="color:white;background-color:rgb(44,45,45);padding:20px;margin-top:20px" >
+	<h1>Help for get Started</h1>
+	<p>here are a few different ways to find help within the community;</p>
+	<div Style=margin-left:20%;text-align:left;>
+	<p>1) Use the search box at the top of the page to see if your question has already been asked and answered </p>
+	<p>2) have a look through our list of FAQs(hers's the link!)</p>
+	<p>3) Browse to one of the help categories listed below and ask a question to the community don't be nervous.,we're a friendly bunch</p>
+	</div>
+</section> 
+<section id="co" Style="color:white;background-color:rgb(44,45,45);padding:20px;margin-top:20px" >
+	<h1>Visit our Community</h1>
+	<p>Have questions?Find answers from our worldwide Community of expert fans!</p>
+	<button id="com" onclick="window.location.href='login.html'"><h3>Go to Community</h3></button>
+</section> 
+<script>
+  function showalert(){
+   alert("Download completed");
+  }
+</script> 
+
+
+
+
+
+
+</body>
+</html>
